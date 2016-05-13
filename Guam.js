@@ -69,7 +69,7 @@ function Guam(input) {
     var translateElement = function (element) {
         var $element = $(element);
         console.log('Replacing:', $element.html());
-        var translated = $element.html().replace(/(<.*?>\s*)*[a-zA-Z]+([.!?,])*(\s*<.*?>)*/g, ' $1guam$2$3 ');
+        var translated = $element.html().replace(/(<.*?>\s*)*[a-zA-Z]+([.!?,])*(\s*<\/.*?>)*/g, ' $1guam$2$3 ');
         console.log('With:', translated);
         $element.html(translated);
     };
