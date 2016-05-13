@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo For Guam Translator</title>
+</head>
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"
+        integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+<script src="Guam.js"></script>
+<body>
+This is just a test.
+<div>
+    It is only a test.
+</div>
+<div>
+    <div>
+        This is just a nested div.
+        <div>
+            And so is this.
+        </div>
+    </div>
+    <button>Push me to translate.</button>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+    var guam = new Guam({
+        debug: true
+    });
+
+    $('button').on('click', function () {
+        guam.translate();
+    })
+</script>
